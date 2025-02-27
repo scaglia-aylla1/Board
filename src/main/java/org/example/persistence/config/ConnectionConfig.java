@@ -12,7 +12,7 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor(access = PRIVATE)
 public class ConnectionConfig {
 
-    private static Connection getConnection() throws SQLException {
+    public static Connection getConnection() throws SQLException {
         var url = "jdbc:mysql://localhost/board";
         var user = "root";
         var password = "123456";
