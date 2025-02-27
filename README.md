@@ -1,7 +1,6 @@
 # Criando um Board com persistência de Dados
 
 ## Diagrama de Classes
-
 ```mermaid
 classDiagram
     class Board {
@@ -31,7 +30,11 @@ classDiagram
     }
 
     Board --> BoardColumn
-    BoardColumn --> Card
-    Card --> Block
-    
+    Board --> Block
+    Board --> Card
+
+
+    Board "1"*--"N" BoardColumn
+    Board "1"*--"N" Card
+    Board "1"*--"N" Block    
 ```
