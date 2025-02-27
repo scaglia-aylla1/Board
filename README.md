@@ -19,14 +19,14 @@ classDiagram
         -int id
         -String blockCause
         -String unblockCause
-        -String unblockIn
+        -Data unblockIn
     }
 
     class Card {
         -int id
         -String title
         -String description
-        -String createdAt
+        -Data createdAt
     }
 
     Board --> BoardColumn
